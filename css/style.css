@@ -11,9 +11,22 @@
     -moz-box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
     margin-bottom: 30px;
     text-align: center;
+    background-color: rgba(0,0,0,0.2);
 }
 
 .pt-img {
     max-height: 100%;
     max-width: 100%;
+}
+
+.pt-table-container {
+    display: table;
+    width: 100%;
+    min-height: 300px;
+    vertical-align: middle;
+}
+
+.pt-cell-container {
+    display: table-cell;
+    vertical-align: middle;
 }
