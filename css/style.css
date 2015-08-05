@@ -1,3 +1,8 @@
+@font-face {
+    font-family: archive;
+    src: url("../fonts/Archive.otf");
+}
+
 .pt-container {
     position: relative;
     width: 100%;
@@ -29,4 +34,17 @@
 .pt-cell-container {
     display: table-cell;
     vertical-align: middle;
+}
+
+.header {
+    font-family: archive;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.header > h1 {
+    text-align: center;
+    color: #333333;
+    text-transform: uppercase;
 }
