@@ -35,3 +35,27 @@ $('body').scrollspy({
 $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
+
+/**
+ * Custom
+ */
+
+$('a[href="#portfolioModalMain"]').click(function(){
+    var p_image = $(this).find('img.img-responsive').attr('src');
+    var p_title = $(this).find('img.img-responsive').attr('data-ptitle');
+    var p_req = $(this).find('img.img-responsive').attr('data-preq');
+
+    var req = p_req.split(",");
+
+    var html_req = "";
+
+
+    $('#portfolioModalMain .portfolio-project-img').attr('src',p_image);
+    $('#portfolioModalMain .portfolio-project-title').html(p_title);
+
+    for(var i = 0; i < req.length; i++) {
+        html_req += '<li><span class="project-req">'+req[i]+'</span></li>';
+    }
+
+    $('#portfolioModalMain .portfolio-project-req').html(html_req);
+});
