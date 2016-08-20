@@ -1,0 +1,235 @@
+@font-face {
+  font-family: GothamRnd-Book;
+  src: url("fonts/GothamRnd-Book.otf");
+}
+
+@font-face {
+  font-family: GothamRnd-Medium;
+  src: url("fonts/GothamRnd-Medium.otf");
+}
+
+.mainbody {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.section-1 {
+  position: relative;
+  width: 100%;
+  min-height: 699px;
+  padding-bottom: 303px;
+  background-image: url('img/bg-cover-1.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 .sec-1-logo {
+  margin: 10px auto;
+}
+
+.section-1 .sec-1-title {
+  font-family: GothamRnd-Book;
+  font-size: 25px;
+  color: #FFFFFF;
+  text-align: center;
+  width: 675px;
+  margin: 10px auto;
+}
+
+.section-1 .sec-1-element {
+  position: absolute;
+  bottom:0;
+  left: calc(50% - (293px / 2));
+}
+
+.section-2 {
+  position: relative;
+  width: 100%;
+  min-height: 377px;
+}
+
+.section-2 .sec-2-top {
+  position: relative;
+  width: 100%;
+  height: 63px;
+  background-color: #03a9f4;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 .sec-2-top .sec-2-btn-more {
+  height: 100%;
+  line-height: 63px;
+  font-size: 23px;
+  font-family: GothamRnd-Book;
+  color: #FFFFFF;
+  text-transform: none;
+}
+
+.section-2 .sec-2-top .sec-2-btn-arrow {
+  position: absolute;
+  bottom: 0;
+  height: 42px;
+  font-size: 2em;
+  left: calc(50% - (46px / 2));
+}
+
+.section-2 .sec-2-bottom {
+  width: 100%;
+  min-height: 314px;
+  background-color: #327ec9;
+}
+
+.section-2 .sec-2-bottom .sec-2-form-container {
+  position: relative;
+  width: 630px;
+  min-height: 360px;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-2 .sec-2-form-container .sec-2-form-element {
+  width: 100%;
+  font-family: GothamRnd-Medium;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+.section-2 .sec-2-form-container .sec-2-form-element .input-field {
+  margin-top: 0;
+}
+
+.section-2 .sec-2-form-container .sec-2-form-element .submit-container {
+  text-align: center;
+}
+
+.section-2 .sec-2-form-container .sec-2-form-element .form-submit-btn {
+  background-color: #ffcc02;
+  color: #4a4a4a;
+}
+
+.section-3 {
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  background-color: #ececec;
+  box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
+  z-index: 5;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 p {
+  font-family: GothamRnd-Book;
+  font-size: 17px;
+  color: #4c4c4c;
+  text-align: center;
+  line-height: 2em;
+}
+
+.section-4 {
+  position: relative;
+  width: 100%;
+  min-height: 540px;
+  background-color: #f7f7f7;
+  padding-top: 50px;
+}
+
+.section-4 .sec-4-values {
+  text-align: center;
+  position: relative;
+}
+
+.sec-4-values:last-child:after {
+	clear: both;
+	content: " ";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+
+.sec-4-values:after{
+	background: #e3e3e3;
+  right: 0;
+	bottom: 0;
+	content: " ";
+	margin-left: -10px;
+	position: absolute;
+	top: 0;
+	width: 2px;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 71px;
+  background-color: #327ec9;
+}
+
+.footer .container {
+  font-family: GothamRnd-Book;
+  font-size: 21px;
+  color: #FFF;
+  line-height: 71px;
+}
+
+
+
+/** Material Input rule **/
+/* label color */
+.input-field label {
+  color: #FFF;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #FFF;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #FFF;
+  box-shadow: 0 1px 0 0 #FFF;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #26a69a;
+  box-shadow: 0 1px 0 0 #26a69a;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #F44336;
+  box-shadow: 0 1px 0 0 #F44336;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #FFF;
+}
+
+/* checkbox label color */
+label {
+  color: #FFFFFF;
+}
+
+/* checkbox box color when UNCHECK */
+[type="checkbox"]+label:before, [type="checkbox"]:not(.filled-in)+label:after {
+  border: 2px solid #FFFFFF;
+}
+
+/* checkbox box color when CHEKCED */
+[type="checkbox"]:checked+label:before {
+  border-right: 2px solid #00f7e0;
+  border-bottom: 2px solid #00f7e0;
+}
